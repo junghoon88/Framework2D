@@ -55,9 +55,9 @@ void database::loadDatabase(wstring name)
 
 
 //¼³Á¤ÀÚ
-void database::setElementCharactor(wstring str, int charactor)
+void database::setElementDataCurrentHP(wstring str, float ch)
 {
 	iterElement mIter = _mTotalElement.find(str);
 
-
+	mIter->second->currentHP = ch;
 }

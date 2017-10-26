@@ -233,9 +233,6 @@
     <ClCompile Include="RenderManager.cpp">
       <Filter>2DGameFramework\Manager</Filter>
     </ClCompile>
-    <ClCompile Include="sceneManager.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="sceneGame.cpp">
       <Filter>MainGame\Scenes</Filter>
     </ClCompile>
@@ -249,6 +246,9 @@
       <Filter>MainGame\database</Filter>
     </ClCompile>
     <ClCompile Include="keyAniManager.cpp">
+      <Filter>2DGameFramework\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="sceneManager.cpp">
       <Filter>2DGameFramework\Manager</Filter>
     </ClCompile>
   </ItemGroup>

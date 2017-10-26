@@ -6,6 +6,7 @@
 class elements
 {
 public:
+	int currentHP;
 
 
 	elements(){};
@@ -23,8 +24,6 @@ private:
 
 private:
 	arrElement _mTotalElement;
-	float _volume;
-	bool _mute;
 
 public:
 	HRESULT init();
@@ -36,13 +35,8 @@ public:
 	elements* getElementData(wstring str) { return _mTotalElement.find(str)->second; }
 
 	//¼³Á¤ÀÚ
-	void setElementCharactor(wstring str, int charactor);
+	void setElementDataCurrentHP(wstring str, float ch);
 
-	void setMute(bool mute) { _mute = mute; }
-	bool getMute(void) { return _mute; }
-
-	void setVolume(float volume) { _volume = volume; }
-	float getVolume(void) { return _volume; }
 
 	database();
 	~database();
