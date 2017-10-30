@@ -237,7 +237,7 @@ animation* keyAniManager::findAnimation(wstring animationKeyName)
 void keyAniManager::deleteAll()
 {
 	viArrAnimation viter = _vTotalAnimation.begin();
-	for (viter; viter != _vTotalAnimation.end(); viter)
+	for (viter; viter != _vTotalAnimation.end(); ++viter)
 	{
 		for (iterAnimations iter = (*viter).begin(); iter != (*viter).end();)
 		{
